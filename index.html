@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <header class="head-wrapper">
+        <img src="../MINI PROJECT 2/assets/Revou.png" alt="logo" class="logo">
+        <div class="nav-bar">
+            <div class="nav-item1">Home</div>
+            <div class="nav-item2">Our Profile</div>
+            <div class="nav-item1">Portfolio</div>
+            <div class="nav-item2">Messages</div>
+        </div>
+    </header>
+
+    <div class="card">
+        <div id="hero-section" class="hero">
+            <h1>Hai Dian, Welcome to Website!</h1>
+            <h2>Ini adalah website latihan pertama.</h2>
+            <br>
+            <br>
+            <br>
+            <source media="(max-width: 1024px)" srcset="img-original.png"/>
+            <source media="(max-width: 600px)" srcset="img-tablet.png"/>
+            <source media="(max-width: 320px)" srcset="img-mobile.png"/>
+            <img src="../MINI PROJECT 2/assets/revou-mini-corse.png" class="img2">
+        </div>
+
+        <div id="headquarters-section" class="head-wrap">
+            <h1>Headquarters</h1>
+                <div class="wrapper">
+                    <source media="(max-width: 1024px)" srcset="img-original.png"/>
+                    <source media="(max-width: 600px)" srcset="img-tablet.png"/>
+                    <source media="(max-width: 320px)" srcset="img-mobile.png"/>
+                    <div class="headquarters-img-container">
+                        <img src="../MINI PROJECT 2/assets/head1.jpg" class="img1">
+                        <p>Jakarta</p>
+                    </div>
+                    <div class="headquarters-img-container">
+                        <img src="../MINI PROJECT 2/assets/head2.jpg" class="img1">
+                        <p>Bandung</p>
+                    </div>
+                    <div class="headquarters-img-container">
+                        <img src="../MINI PROJECT 2/assets/head1.jpg" class="img1">
+                        <p>Surabaya</p>
+                    </div>
+                </div>
+        </div>
+        <div id="messages-us-section" class="msg">
+            <h1>Messages Us</h1>
+            <div class="messages-us">
+                <form class="hasil" onsubmit="event.preventDefault() ; onformsubmit();" autocomplete="off">
+                    <table>
+                        <tr>
+                            <td>Nama</td>
+                            <td>:</td>
+                            <td>
+                                <input id="n" type="text" name="nama" oninput="namakamu()">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Tanggal Lahir</td>
+                            <td>:</td>
+                            <td>
+                                <input type="text" name="tanggal" oninput="tanggallahir()">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Jenis Kelamin</td>
+                            <td>:</td>
+                            <td> 
+                                <input type="radio" name="gender" value="laki-laki">Laki-laki</input>
+                                <input type="radio" name="gender" value="perempuan">Perempuan</input>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Pesan</td>
+                            <td>:</td>
+                            <td> 
+                                <textarea name="pesan"></textarea>
+                            </td>
+                        </tr>
+                    </table>
+                    <div class="btn">
+                        <input type="submit" value="Submit">
+                    </div>
+                </form>
+                
+                <table class="output">
+                    <tr>
+                        <td>Nama</td>
+                        <td>:</td>
+                        <td>
+                            <span id="namakamu"></span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Tanggal Lahir</td>
+                        <td>:</td>
+                        <td>
+                            <span id="tanggallahir"></span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Jenis Kelamin</td>
+                        <td>:</td>
+                        <td>
+                            <span id="yourgender"></span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Pesan</td>
+                        <td>:</td>
+                        <td>
+                            <span id="pesanmu"></span>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+    <footer>
+        Created by Dian Retno Sari
+    </footer>
+</body>
+</html>
